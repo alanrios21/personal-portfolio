@@ -7,7 +7,6 @@
     <link rel="icon" href="icono/Icono-PORTAFOLIO.png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"></link>
     <script src="https://kit.fontawesome.com/18bc81c54f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body class="bg-dark text-white">
     <header>
@@ -247,75 +247,6 @@
                  <a href="mailto:riosalan264@gmail.com"><i class="far fa-envelope fa-2x text-danger icono"></i></a>
               </div>
             </div>
-          </footer>
-           <script>
-               AOS.init();
-               const navBar = document.querySelector('#nav');
-               const menu = document.querySelector('#menu');
-               const nav_uno = document.querySelector('#nav1')
-               navBar.addEventListener('click', function (){
-               menu.classList.toggle('menu2');
-               nav_uno.classList.toggle('open');
-            });
-                 const boton_guardar = document.querySelector('#btn-guardar');
-                 const input_text = document.querySelector('#nombre');
-                 const input_text_dos =  document.querySelector('#email');
-                 let validar = () => {
-                      let inputs_requeridos = document.querySelectorAll('#formulario [required]');
-                      let error = false;
-                      let texto = input_text.value;
-                      let correo = input_text_dos.value;
-                      let exp = /([A-Za-z\s]{6,20})(?!.*?[\W_0-9])/;
-                      let exp_dos = /^([a-z0-9_\.-]+)@([a-z\.]+)\.([a-z]{2,6})(?!.*?\W)/;
-                      for (let i = 0; i < inputs_requeridos.length; i++) {
-                          if (inputs_requeridos[i].value == '') {
-                              inputs_requeridos[i].classList.add('has-error');
-                              error = true;
-                          }
-                          
-                      }
-                       if((exp.test(texto) == false) || (exp_dos.test(correo) == false)) {
-                         input_text.classList.add('has-error');
-                         input_text_dos.classList.add('has-error');
-                         error = true;
-                         
-                       }
-
-                       if((exp.test(texto) == true) && (exp_dos.test(correo) == true)){
-                        input_text.classList.remove('has-error');
-                        input_text_dos.classList.remove('has-error');
-                        error = false;
-                        
-                       }
-
-                      return error;
-                  };
-                  let limpiar = () => {
-                        nombre.value = "";
-                        email.value = "";
-                    };
-                 let obtener_datos = () => {
-                 let error = validar();
-                    if (error) {
-                        Swal.fire({
-                            'title': 'Sus datos no se pudieron enviar',
-                            'text': 'Por favor revise todos los campos',
-                            'icon': 'warning'
-                        });
-                    } else {
-                            console.log(nombre.value);
-                            console.log(email.value);
-                            Swal.fire({
-                              
-                                'title': 'Proceso realizado con éxito',
-                                'text': 'Sus datos se enviaron adecuadamente',
-                                'icon': 'success'
-                            }).then(() => {
-                                limpiar();
-                            });
-                        }
-                    }
-                 boton_guardar.addEventListener('click', obtener_datos);
-            </script>     
+          </footer>    
       </body>
 </html>
