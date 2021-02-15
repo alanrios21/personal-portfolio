@@ -64,4 +64,6 @@ nav_uno.classList.toggle('open');
              });
          }
      }
-  boton_guardar.addEventListener('click', obtener_datos);
+  if(boton_guardar){
+    boton_guardar.addEventListener('click', obtener_datos);
+  }
