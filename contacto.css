@@ -10,30 +10,14 @@
      
 }
 
- html{
+html{
     scroll-behavior: smooth;
 } 
 
-.projects{
-  position: relative;
-  right: 5px;
-  top: 170px;
-}
-
 .contact{
-  position: relative;
-  right: 3px;
-}
-
-.move{
     position: relative;
-    bottom: 70px;
-}
-
-.text-position{
-  position: relative;
-  top: 18px;
-}
+    right: 3px;
+  }
 
 .has-error label,
 .has-error input,
@@ -47,64 +31,6 @@
             padding: 4px 0 0;
             color: #dc3545;
         }
-
-.texto-habilidades{
-  position: relative;
-  top: 150px;
-}
- 
-.titulo-proyecto{
-  position: relative;
-  right: 6px;
-}
-
-
-.my-section{
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  top: 180px;
-  height: 500px;
-  border-radius: 12px;
-  background: #222;
-  
-}
-
-.mi-cv{
-  color: white;
-  background-color: crimson;
-  font-size: 25px;
-  font-weight: 600;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 220px;
-  padding: 10px;
-  position: relative;
-  top: 30px;
-  outline: transparent;
-  left: 170px;
-  border-radius: 5px;
-
-}
-  .mi-cv:hover{
-    color: crimson;
-    background: none;
-    
-  }
-.titulo-inicio{
-  position: relative;
-  top: 110px;
-}
-
-.sobre-mi{
-  position: relative;
-  bottom: 40px;
-}
-
-a .mi-cv{
-  outline: transparent;
-}
 
 footer{
   display: flex;
@@ -246,116 +172,81 @@ a:link, a:visited, a:active {
   transform: translateY(3px);
 }
 
-.swal-wide{
-  width:350px !important;
-}
-
 .container-contacto{
-  background-color: #222;
-  width: 100%;
-  max-width: 600px;
-  height: 540px;
-  position: relative;
-  top: 160px;
-  border-radius: 6px;
-}
-
-@media (min-width: 947px){
-
-  .menu-toggle {
-    display: none;
-}
-.site-nav {
-    top: -15px;
-    height: auto;
+    background-color: #222;
+    width: 100%;
+    max-width: 600px;
+    height: 540px;
     position: relative;
-    background: transparent;
-    float: right;
-    margin-right: 10px;
-    clip-path: initial;
-    text-align: right;
-    padding-right: 30px;
-}
-.site-nav li {
-    display: inline-block;
-    border: none;
-}
-
-.site-nav a {
-    padding: 0;
-    margin-left: 3em;
-}
-.site-nav--icon {
-    display: none;
-}
-.site-nav a:hover,
-.site-nav a:focus {
-    background: transparent;
- }
- .header-logo {
-  width: 180px;
-  position: relative;
-  top: 20px;
-  color: white;
-  text-decoration: none;
-  left: 20px;
-  border: none;
- }
-
- .site-nav ul {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  font-size: 16px;
-  width: 100%;
-  text-align: right;
-
-}
- header{
-   padding-bottom: 20px;
- }
-}
-
-@media (min-height: 960px){
-    .my-section{
-      top: 230px;
-    }
-}
-
-@media only screen and (max-height: 650px){
-  .carta-proyecto{
-    bottom: 100px;
-  }
-  .titulo-proyecto{
-    bottom: 80px;
-  }
-}
-
-@media (max-width: 620px){
-  .container-contacto{
-    max-width: 400px;
-  }
-  .my-section{
-    max-width: 400px;
-  }
-  .mi-cv{
-    top: -30px;
-    left: 80px;
-  }
-}
-
-
-@media (max-width: 420px){
-  .my-section{
-    max-width: 300px;
-    height: 600px;
-    top: 170px;
-  }
-  .mi-cv{
-    left: 25px;
-    
+    top: 160px;
+    border-radius: 6px;
   }
   
-}
+  @media (min-width: 947px){
+  
+    .menu-toggle {
+      display: none;
+  }
+  .site-nav {
+      top: -15px;
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+      margin-right: 10px;
+      clip-path: initial;
+      text-align: right;
+      padding-right: 30px;
+  }
+  .site-nav li {
+      display: inline-block;
+      border: none;
+  }
+  
+  .site-nav a {
+      padding: 0;
+      margin-left: 3em;
+  }
+  .site-nav--icon {
+      display: none;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus {
+      background: transparent;
+   }
+   .header-logo {
+    width: 180px;
+    position: relative;
+    top: 20px;
+    color: white;
+    text-decoration: none;
+    left: 20px;
+    border: none;
+   }
+  
+   .site-nav ul {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    width: 100%;
+    text-align: right;
+  
+  }
+   header{
+     padding-bottom: 20px;
+   }
+  }
 
+  @media (max-width: 620px){
+    .container-contacto{
+      max-width: 400px;
+    }
+    
+  }
 
+  @media(max-width: 420px){
+    .container-contacto{
+        max-width: 300px;
+      }
+  }

@@ -52,10 +52,7 @@ menuBtn.addEventListener("click", function () {
              'icon': 'warning'
          });
      } else {
-             console.log(nombre.value);
-             console.log(email.value);
              Swal.fire({
-               
                  'title': 'Proceso realizado con éxito',
                  'text': 'Sus datos se enviaron adecuadamente',
                  'icon': 'success'
