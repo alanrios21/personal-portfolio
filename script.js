@@ -1,11 +1,11 @@
-AOS.init();
-const navBar = document.querySelector('#nav');
-const menu = document.querySelector('#menu');
-const nav_uno = document.querySelector('#nav1')
-navBar.addEventListener('click', function (){
-menu.classList.toggle('menu2');
-nav_uno.classList.toggle('open');
+const menuBtn = document.querySelector(".menu-toggle");
+const topNav = document.querySelector(".site-nav");
+menuBtn.addEventListener("click", function () {
+    topNav.classList.toggle("site-nav-open");
+    menuBtn.classList.toggle("menu-open");
+    document.querySelector('header').classList.toggle('poner-color')
 });
+
   const boton_guardar = document.querySelector('#btn-guardar');
   const input_text = document.querySelector('#nombre');
   const input_text_dos =  document.querySelector('#email');
