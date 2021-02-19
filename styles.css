@@ -111,7 +111,7 @@ footer{
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 120px;
+  height: 100px;
   background-color: #222;
   align-items: center;
   justify-content: center;
@@ -349,13 +349,18 @@ a:link, a:visited, a:active {
   .my-section{
     max-width: 300px;
     height: 600px;
-    top: 170px;
+    top: 140px;
+    
   }
   .mi-cv{
     left: 25px;
     
-  }
-  
+  } 
 }
 
+@media(max-height: 710px){
+  .my-section{
+    margin-bottom: 17.5rem;
+  }
+}
 
