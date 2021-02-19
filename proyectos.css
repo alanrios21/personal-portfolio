@@ -17,7 +17,7 @@ html{
 .titulo-proyecto{
     position: relative;
     right: 6px;
-    top: 70px
+    top: 120px
   }
   
   .projects{
@@ -53,6 +53,8 @@ footer{
     border: none;
     background: crimson;
     padding-bottom: 43px;
+    height: 75px;
+  
   
   }
   
@@ -278,6 +280,7 @@ footer{
   }
    header{
      padding-bottom: 20px;
+     height: auto;
    }
   }
 
@@ -303,8 +306,36 @@ footer{
     .content-carrousel figure:nth-child(1){transform: rotateY(120deg) translateZ(70px);}
     .content-carrousel figure:nth-child(2){transform: rotateY(240deg) translateZ(70px);}
     .content-carrousel figure:nth-child(3){transform: rotateY(360deg) translateZ(70px);}
-
+    
+    .titulo-proyecto{
+      top: 70px
+    }
     
   }
+
+  @media(max-width: 947px){
+    footer{
+      height: 75px;
+    }
+    .iconos{
+      position: relative;
+      bottom: 12px;
+    }
+  }
+  @media(max-height: 720px){
+    .content-carrousel figure{
+      top: -70px;
+    }
+    .titulo-proyecto{
+      top: 90px;
+    }
+  }
+
+  @media(max-height: 568px){
+    .content-carrousel figure{
+      top: -120px;
+    }
+  }
+  
 
   

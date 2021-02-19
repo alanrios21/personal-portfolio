@@ -14,27 +14,6 @@
     scroll-behavior: smooth;
 } 
 
-.projects{
-  position: relative;
-  right: 5px;
-  top: 170px;
-}
-
-.contact{
-  position: relative;
-  right: 3px;
-}
-
-.move{
-    position: relative;
-    bottom: 70px;
-}
-
-.text-position{
-  position: relative;
-  top: 18px;
-}
-
 .has-error label,
 .has-error input,
 .has-error textarea {
@@ -115,7 +94,6 @@ footer{
   background-color: #222;
   align-items: center;
   justify-content: center;
-  
 }
 /*Navegacion*/
 
@@ -129,6 +107,7 @@ header {
   border: none;
   background: crimson;
   padding-bottom: 43px;
+  height: 75px;
 
 }
 
@@ -313,7 +292,18 @@ a:link, a:visited, a:active {
 }
  header{
    padding-bottom: 20px;
+   height: auto;
  }
+}
+
+@media(max-width: 947px){
+  footer{
+    height: 75px;
+  }
+  .iconos{
+    position: relative;
+    top: -12px;
+  }
 }
 
 @media (min-height: 960px){
@@ -358,9 +348,22 @@ a:link, a:visited, a:active {
   } 
 }
 
-@media(max-height: 710px){
+@media(max-height: 720px){
   .my-section{
-    margin-bottom: 17.5rem;
+    top: 135px
   }
 }
 
+
+
+@media(max-height: 731px){
+  .my-section{
+    margin-bottom: 280px;
+  }
+}
+
+@media(max-height: 823px){
+   .my-section{
+     margin-bottom: 280px;
+   }
+}

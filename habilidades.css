@@ -42,6 +42,7 @@ footer{
     border: none;
     background: crimson;
     padding-bottom: 43px;
+    height: 72px;
   
   }
   
@@ -271,8 +272,19 @@ footer{
   }
    header{
      padding-bottom: 20px;
+     height: auto;
    }
   }
+
+@media(max-width: 947px){
+  footer{
+    height: 75px;
+  }
+  .iconos{
+    position: relative;
+    top: -10px;
+  }
+}
 
   @media(max-width: 620px){
       .card{
@@ -294,29 +306,60 @@ footer{
 
   @media(max-width: 420px){
       .card{
-          max-width: 120px;
+          max-width: 160px;
           padding-bottom: 420px;
       }
       .content-carrousel figure{
-          height: 420px;
-          max-width: 120px;
+          height: 320px;
+          max-width: 160px;
           bottom: -350px;
           
       }
-  .content-carrousel figure:nth-child(1){transform: rotateY(60deg) translateZ(110px);}
-  .content-carrousel figure:nth-child(2){transform: rotateY(120deg) translateZ(110px);}
-  .content-carrousel figure:nth-child(3){transform: rotateY(180deg) translateZ(110px);}
-  .content-carrousel figure:nth-child(4){transform: rotateY(240deg) translateZ(110px);}
-  .content-carrousel figure:nth-child(5){transform: rotateY(300deg) translateZ(110px);}
-  .content-carrousel figure:nth-child(6){transform: rotateY(360deg) translateZ(110px);}
+  .content-carrousel figure:nth-child(1){transform: rotateY(60deg) translateZ(140px);}
+  .content-carrousel figure:nth-child(2){transform: rotateY(120deg) translateZ(140px);}
+  .content-carrousel figure:nth-child(3){transform: rotateY(180deg) translateZ(140px);}
+  .content-carrousel figure:nth-child(4){transform: rotateY(240deg) translateZ(140px);}
+  .content-carrousel figure:nth-child(5){transform: rotateY(300deg) translateZ(140px);}
+  .content-carrousel figure:nth-child(6){transform: rotateY(360deg) translateZ(140px);}
 
   .texto-habilidades{
        top: 150px;
        }
   }
 
-  @media(max-height: 710px){
-      .content-all{
-          margin-bottom: 830px;
-      }
+  
+
+  @media(max-height: 640px){
+    .content-carrousel figure{
+      margin-bottom: 0px;
+      top: -80px;
+      
+    }
+  
+  }
+
+  @media(max-height: 731px){
+    .content-carrousel figure{
+      margin-bottom: 0px;
+      top: -80px;
+      
+    }
+  }
+  @media(max-height: 823px){
+    .content-carrousel figure{
+      margin-bottom: 0px;
+      top: -80px;
+      
+    }
+  }
+
+  @media(max-height: 568px){
+    .content-all{
+      margin-bottom: 830px;
+    }
+  }
+  @media(max-height: 667px){
+    .content-all{
+      margin-bottom: 830px;
+    }
   }

@@ -19,6 +19,7 @@ html{
     right: 3px;
   }
 
+
 .has-error label,
 .has-error input,
 .has-error textarea {
@@ -55,6 +56,7 @@ header {
   border: none;
   background: crimson;
   padding-bottom: 43px;
+  height: 72px;
 
 }
 
@@ -235,8 +237,19 @@ a:link, a:visited, a:active {
   }
    header{
      padding-bottom: 20px;
+     height: auto;
    }
   }
+
+@media(max-width: 947px){
+  footer{
+    height: 75px;
+  }
+  .iconos{
+    position: relative;
+    top: -10px;
+  }
+}
 
   @media (max-width: 620px){
     .container-contacto{
@@ -258,4 +271,41 @@ a:link, a:visited, a:active {
           height: 530px;
           margin-bottom: 250px;
       }    
+  }
+
+  @media(max-height: 720px){
+    .container-contacto{
+      top: 90px;
+    }
+  }
+
+  @media(max-height: 731px){
+    .container-contacto{
+      margin-top: 60px;
+      margin-bottom: 300px;
+    }
+  }
+  @media(max-height: 823px){
+    .container-contacto{
+      margin-top: 60px;
+      margin-bottom: 250px;
+    }
+  }
+
+  @media(max-height: 568px){
+    .container-contacto{
+      margin-bottom: 250px;
+    }
+  }
+
+  @media(max-height: 667px){
+    .container-contacto{
+      margin-bottom: 250px;
+    }
+  }
+
+  @media(min-height: 900px){
+    .container-contacto{
+      top: 220px;
+    }
   }
