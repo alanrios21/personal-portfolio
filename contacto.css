@@ -105,7 +105,7 @@ a:link, a:visited, a:active {
   padding: 0;
   list-style: none;
   position: relative;
-  top: 10px;
+  top: -30px;
   text-align: center;
   font-size: 23px;
   
@@ -255,7 +255,7 @@ a:link, a:visited, a:active {
   @media (max-height: 710px){
       .container-contacto{
           top: 120px;
-          height: 470px;
+          height: 530px;
           margin-bottom: 250px;
       }    
   }
