@@ -3,7 +3,6 @@ const topNav = document.querySelector(".site-nav");
 menuBtn.addEventListener("click", function () {
     topNav.classList.toggle("site-nav-open");
     menuBtn.classList.toggle("menu-open");
-    document.querySelector('header').classList.toggle('poner-color')
 });
 
 let timerInterval;
@@ -34,5 +33,3 @@ Swal.fire({
     console.log('I was closed by the timer')
   }
 })
-
- 

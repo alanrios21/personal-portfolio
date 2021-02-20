@@ -1,167 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
-#alan{
-     background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(26, 25, 25, 0.5)), url("imagenes/web-developer-picture.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-     background-attachment: fixed;
-     font-family: 'Poppins', sans-serif;
-     
-}
-
- html{
-    scroll-behavior: smooth;
-} 
 
 .texto-habilidades{
     position: relative;
     top: 150px;
   }
-   
-
-footer{
-    display: flex;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: 100px;
-    background-color: #222;
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-  header {
-    background-color: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1030;
-    right: 0;
-    border: none;
-    background: crimson;
-    padding-bottom: 43px;
-    height: 72px;
   
-  }
-  
-  header::after {
-    content: "";
-    clear: both;
-    display: block;
-    
-  }
-  
-  .header-logo {
-    width: 180px;
-    position: relative;
-    top: 20px;
-    color: white;
-    text-decoration: none;
-    left: 20px;
-    border: none;
-  }
-  
-  a:link, a:visited, a:active {
-    text-decoration:none;
-  }
-  .site-nav {
-    top: 98%;
-    width: 100%;
-    height: 2000px;
-    background: crimson;
-    right: 0;
-    position: absolute;
-    clip-path: circle(0px at top right);
-    transition: clip-path ease-in-out 700ms;
-    
-    
-    
-  }
-  .site-nav-open {
-    clip-path: circle(150% at top right);
-    top: 98%;
-    width: 100%;
-    background: crimson;
-    height: 2000px;
-   
-   
-  }
-  .site-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-    top: -30px;
-    text-align: center;
-    font-size: 23px;
-    
-  }
-  
-  .hover-menu:hover{
-    color: #222;
-  }
-  
-  
-  .site-nav a {
-    color: white;
-    display: block;
-    padding: 2em 4em;
-    text-decoration: none;
-    
-  }
-  
-  .site-nav--icon {
-    display: inline-block;
-    font-size: 1.5em;
-    margin-right: 1em;
-    width: 1.1em;
-    text-align: right;
-    color: rgba(255, 255, 255, 0.918);
-    cursor: pointer;
-  }
-  
-  .menu-toggle {
-    padding-bottom: 1em;
-    padding-top: 0.8em;
-    padding-left: 1em;
-    padding-right: 1em;
-    position: absolute;
-    top: 1.6em;
-    right: 0em;
-    cursor: pointer;
-    
-  }
-  .menu-open .hamburger {
-    transform: rotate(45deg);
-  }
-  .menu-open .hamburger::before {
-    opacity: 0;
-  }
-  .menu-open .hamburger::after {
-    transform: translateY(-3px) rotate(-90deg);
-  }
-  .hamburger,
-  .hamburger::before,
-  .hamburger::after {
-    content: "";
-    display: block;
-    background: white;
-    height: 3px;
-    width: 1.75em;
-    border-radius: 16px;
-    transition: all ease-in-out 500ms;
-  }
-  .hamburger::before {
-    transform: translateY(-6px);
-  }
-  .hamburger::after {
-    transform: translateY(3px);
-  }
-
-  /* Carrusel */
-
 .content-all{
     width: 100%;
     max-width: 280px;
@@ -176,14 +18,11 @@ footer{
     position: absolute;
     animation: rotar 10s infinite linear;
     transform-style: preserve-3d;
-  
-   
   }
   
   .content-carrousel:hover{
     animation-play-state: paused;
-    cursor: pointer;
-    
+    cursor: pointer;   
   }
   
   
@@ -193,9 +32,7 @@ footer{
     position: absolute;
     box-shadow: 0px 0px 20px 0px black;
     transition: all 300ms;
-    overflow: hidden;
-    
-    
+    overflow: hidden;   
   }
   
   .content-carrousel figure:hover{
@@ -218,74 +55,36 @@ footer{
       transform: rotateY(360deg);
     }
   }
-
-  @media (min-width: 947px){
-
-    .menu-toggle {
-      display: none;
-  }
-  .site-nav {
-      top: -15px;
-      height: auto;
-      position: relative;
-      background: transparent;
-      float: right;
-      margin-right: 10px;
-      clip-path: initial;
-      text-align: right;
-      padding-right: 30px;
-  }
-  .site-nav li {
-      display: inline-block;
-      border: none;
-  }
-  
-  .site-nav a {
-      padding: 0;
-      margin-left: 3em;
-  }
-  .site-nav--icon {
-      display: none;
-  }
-  .site-nav a:hover,
-  .site-nav a:focus {
-      background: transparent;
-   }
-   .header-logo {
-    width: 180px;
-    position: relative;
-    top: 20px;
-    color: white;
-    text-decoration: none;
-    left: 20px;
-    border: none;
-   }
-  
-   .site-nav ul {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    font-size: 16px;
-    width: 100%;
-    text-align: right;
-  
-  }
-   header{
-     padding-bottom: 20px;
-     height: auto;
-   }
+  .card{
+    height: 210px;
   }
 
-@media(max-width: 947px){
-  footer{
-    height: 75px;
-  }
-  .iconos{
-    position: relative;
-    top: -10px;
+@media(max-height: 823px){
+  .content-carrousel figure{
+    top: -80px;  
   }
 }
 
+@media(max-height: 731px){
+  .content-carrousel figure{
+    top: -80px;  
+  }
+}
+
+@media(max-height: 667px){
+  .content-all{
+    margin-bottom: 730px;
+  }
+}
+
+@media(max-height: 640px){
+  .content-carrousel figure{
+    top: -80px;
+  }
+  .content-all{
+    margin-bottom: 730px;
+  } 
+}
   @media(max-width: 620px){
       .card{
           max-width: 180px;
@@ -304,6 +103,12 @@ footer{
   .content-carrousel figure:nth-child(6){transform: rotateY(360deg) translateZ(160px);}
   }
 
+  @media(max-height: 568px){
+    .content-all{
+      margin-bottom: 730px;
+    }
+  }
+
   @media(max-width: 420px){
       .card{
           max-width: 160px;
@@ -312,8 +117,7 @@ footer{
       .content-carrousel figure{
           height: 320px;
           max-width: 160px;
-          bottom: -350px;
-          
+          bottom: -350px;      
       }
   .content-carrousel figure:nth-child(1){transform: rotateY(60deg) translateZ(140px);}
   .content-carrousel figure:nth-child(2){transform: rotateY(120deg) translateZ(140px);}
@@ -325,41 +129,4 @@ footer{
   .texto-habilidades{
        top: 150px;
        }
-  }
-
-  
-
-  @media(max-height: 640px){
-    .content-carrousel figure{
-      margin-bottom: 0px;
-      top: -80px;
-      
-    }
-  
-  }
-
-  @media(max-height: 731px){
-    .content-carrousel figure{
-      margin-bottom: 0px;
-      top: -80px;
-      
-    }
-  }
-  @media(max-height: 823px){
-    .content-carrousel figure{
-      margin-bottom: 0px;
-      top: -80px;
-      
-    }
-  }
-
-  @media(max-height: 568px){
-    .content-all{
-      margin-bottom: 830px;
-    }
-  }
-  @media(max-height: 667px){
-    .content-all{
-      margin-bottom: 830px;
-    }
   }

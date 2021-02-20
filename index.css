@@ -1,42 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 #alan{
-     background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(26, 25, 25, 0.5)), url("imagenes/web-developer-picture.jpg");
+     background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(26, 25, 25, 0.5)), url("/imagenes/web-developer-picture.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center center;
      background-attachment: fixed;
-     font-family: 'Poppins', sans-serif;
-     
+     font-family: 'Poppins', sans-serif;    
 }
 
  html{
     scroll-behavior: smooth;
 } 
-
-.has-error label,
-.has-error input,
-.has-error textarea {
-            color: #dc3545;
-            border-color: #dc3545;
-        }
-
-.list-unstyled li {
-            font-size: 13px;
-            padding: 4px 0 0;
-            color: #dc3545;
-        }
-
-.texto-habilidades{
-  position: relative;
-  top: 150px;
-}
- 
-.titulo-proyecto{
-  position: relative;
-  right: 6px;
-}
-
 
 .my-section{
   position: relative;
@@ -45,8 +20,7 @@
   top: 180px;
   height: 500px;
   border-radius: 12px;
-  background: #222;
-  
+  background: #222; 
 }
 
 .mi-cv{
@@ -64,13 +38,13 @@
   outline: transparent;
   left: 170px;
   border-radius: 5px;
-
 }
+
   .mi-cv:hover{
     color: crimson;
     background: none;
-    
-  }
+ }
+
 .titulo-inicio{
   position: relative;
   top: 110px;
@@ -95,7 +69,6 @@ footer{
   align-items: center;
   justify-content: center;
 }
-/*Navegacion*/
 
 header {
   background-color: none;
@@ -108,14 +81,12 @@ header {
   background: crimson;
   padding-bottom: 43px;
   height: 75px;
-
 }
 
 header::after {
   content: "";
   clear: both;
-  display: block;
-  
+  display: block;  
 }
 
 .header-logo {
@@ -131,6 +102,7 @@ header::after {
 a:link, a:visited, a:active {
   text-decoration:none;
 }
+
 .site-nav {
   top: 98%;
   width: 100%;
@@ -139,20 +111,17 @@ a:link, a:visited, a:active {
   right: 0;
   position: absolute;
   clip-path: circle(0px at top right);
-  transition: clip-path ease-in-out 700ms;
-  
-  
-  
+  transition: clip-path ease-in-out 700ms;  
 }
+
 .site-nav-open {
   clip-path: circle(150% at top right);
   top: 98%;
   width: 100%;
   background: crimson;
   height: 2000px;
- 
- 
 }
+
 .site-nav ul {
   margin: 0;
   padding: 0;
@@ -160,8 +129,7 @@ a:link, a:visited, a:active {
   position: relative;
   top: -30px;
   text-align: center;
-  font-size: 23px;
-  
+  font-size: 23px;  
 }
 
 .hover-menu:hover{
@@ -173,8 +141,7 @@ a:link, a:visited, a:active {
   color: white;
   display: block;
   padding: 2em 4em;
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
 
 .site-nav--icon {
@@ -195,18 +162,21 @@ a:link, a:visited, a:active {
   position: absolute;
   top: 1.6em;
   right: 0em;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
+
 .menu-open .hamburger {
   transform: rotate(45deg);
 }
+
 .menu-open .hamburger::before {
   opacity: 0;
 }
+
 .menu-open .hamburger::after {
   transform: translateY(-3px) rotate(-90deg);
 }
+
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -240,10 +210,10 @@ a:link, a:visited, a:active {
 }
 
 @media (min-width: 947px){
-
   .menu-toggle {
     display: none;
 }
+
 .site-nav {
     top: -15px;
     height: auto;
@@ -255,6 +225,7 @@ a:link, a:visited, a:active {
     text-align: right;
     padding-right: 30px;
 }
+
 .site-nav li {
     display: inline-block;
     border: none;
@@ -264,13 +235,16 @@ a:link, a:visited, a:active {
     padding: 0;
     margin-left: 3em;
 }
+
 .site-nav--icon {
     display: none;
 }
+
 .site-nav a:hover,
 .site-nav a:focus {
     background: transparent;
  }
+
  .header-logo {
   width: 180px;
   position: relative;
@@ -288,8 +262,8 @@ a:link, a:visited, a:active {
   font-size: 16px;
   width: 100%;
   text-align: right;
-
 }
+
  header{
    padding-bottom: 20px;
    height: auto;
@@ -334,17 +308,14 @@ a:link, a:visited, a:active {
   }
 }
 
-
 @media (max-width: 420px){
   .my-section{
     max-width: 300px;
     height: 600px;
-    top: 140px;
-    
+    top: 140px;  
   }
   .mi-cv{
-    left: 25px;
-    
+    left: 25px;  
   } 
 }
 
@@ -353,8 +324,6 @@ a:link, a:visited, a:active {
     top: 135px
   }
 }
-
-
 
 @media(max-height: 731px){
   .my-section{

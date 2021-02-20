@@ -3,7 +3,6 @@ const topNav = document.querySelector(".site-nav");
 menuBtn.addEventListener("click", function () {
     topNav.classList.toggle("site-nav-open");
     menuBtn.classList.toggle("menu-open");
-    document.querySelector('header').classList.toggle('poner-color')
 });
 
   const boton_guardar = document.querySelector('#btn-guardar');
@@ -20,29 +19,27 @@ menuBtn.addEventListener("click", function () {
            if (inputs_requeridos[i].value == '') {
                inputs_requeridos[i].classList.add('has-error');
                error = true;
-           }
-           
+           }     
        }
         if((exp.test(texto) == false) || (exp_dos.test(correo) == false)) {
           input_text.classList.add('has-error');
           input_text_dos.classList.add('has-error');
-          error = true;
-          
+          error = true;     
         }
 
         if((exp.test(texto) == true) && (exp_dos.test(correo) == true)){
          input_text.classList.remove('has-error');
          input_text_dos.classList.remove('has-error');
-         error = false;
-         
+         error = false; 
         }
-
-       return error;
+      return error;
    };
+
    let limpiar = () => {
          nombre.value = "";
          email.value = "";
      };
+
   let obtener_datos = () => {
   let error = validar();
      if (error) {
@@ -61,6 +58,7 @@ menuBtn.addEventListener("click", function () {
              });
          }
      }
+     
   if(boton_guardar){
     boton_guardar.addEventListener('click', obtener_datos);
   }
