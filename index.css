@@ -17,7 +17,7 @@
   position: relative;
   width: 100%;
   max-width: 600px;
-  top: 180px;
+  top: 240px;
   height: 500px;
   border-radius: 12px;
   background: #222; 
@@ -270,6 +270,7 @@ a:link, a:visited, a:active {
  }
 }
 
+
 @media(max-width: 947px){
   footer{
     height: 75px;
@@ -280,25 +281,37 @@ a:link, a:visited, a:active {
   }
 }
 
-@media (min-height: 960px){
-    .my-section{
-      top: 230px;
-    }
+@media(min-height: 1024px){
+  .my-section{
+    top: 260px;
+  }
+ }
+
+@media(min-height: 1366px){
+  .my-section{
+    top: 430px;
+  }
 }
 
-@media only screen and (max-height: 650px){
-  .carta-proyecto{
-    bottom: 100px;
+@media(max-height: 823px){
+  .my-section{
+    margin-bottom: 280px;
   }
-  .titulo-proyecto{
-    bottom: 80px;
+}
+
+@media(max-height: 720px){
+  .my-section{
+    top: 135px
+  }
+}
+
+@media(max-height: 731px){
+  .my-section{
+    margin-bottom: 280px;
   }
 }
 
 @media (max-width: 620px){
-  .container-contacto{
-    max-width: 400px;
-  }
   .my-section{
     max-width: 400px;
   }
@@ -317,22 +330,4 @@ a:link, a:visited, a:active {
   .mi-cv{
     left: 25px;  
   } 
-}
-
-@media(max-height: 720px){
-  .my-section{
-    top: 135px
-  }
-}
-
-@media(max-height: 731px){
-  .my-section{
-    margin-bottom: 280px;
-  }
-}
-
-@media(max-height: 823px){
-   .my-section{
-     margin-bottom: 280px;
-   }
 }
