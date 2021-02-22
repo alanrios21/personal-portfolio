@@ -316,7 +316,7 @@ a:link, a:visited, a:active {
     max-width: 400px;
   }
   .mi-cv{
-    top: -30px;
+    top: 0px;
     left: 80px;
   }
 }

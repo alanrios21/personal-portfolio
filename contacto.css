@@ -22,10 +22,10 @@
     max-width: 600px;
     height: 540px;
     position: relative;
-    top: 160px;
+    top: 0px;
     border-radius: 6px;
   }
-  
+
   @media (max-width: 620px){
     .container-contacto{
       max-width: 400px;
@@ -47,11 +47,10 @@
 
   @media(max-height: 1024px){
     .container-contacto{
-      top: 250px;
+      top: 240px;
     }
   }
 
- 
   @media(max-height: 823px){
     .container-contacto{
       margin-bottom: 250px;
