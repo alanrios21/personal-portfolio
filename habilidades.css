@@ -16,7 +16,7 @@
   .content-carrousel{
     width: 100%;
     position: absolute;
-    animation: rotar 10s infinite linear;
+    animation: rotar 20s infinite linear;
     transform-style: preserve-3d;
   }
   

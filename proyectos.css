@@ -53,15 +53,18 @@
   .content-carrousel figure:nth-child(1){transform: rotateY(120deg) translateZ(92px);}
   .content-carrousel figure:nth-child(2){transform: rotateY(240deg) translateZ(92px);}
   .content-carrousel figure:nth-child(3){transform: rotateY(360deg) translateZ(92px);}
+
   
   @keyframes rotar{
     from{
-      transform: rotateY(0deg);
+      transform: rotateY(0);
     }
     to{
       transform: rotateY(360deg);
     }
   }
+
+  
   @media only screen and (max-height: 650px){
     .carta-proyecto{
       bottom: 100px;
@@ -88,6 +91,7 @@
       top: 70px
     }  
   }
+
 
   @media(max-height: 1366px){
     .content-all{
