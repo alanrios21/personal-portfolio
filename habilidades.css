@@ -5,31 +5,40 @@
     text-align: center;
   }
   
-  .section-skills{
+  .box{
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 400px;
+    justify-content: space-around;
+    margin-bottom: 60px;
   }
 
-  .card{
+  .box-2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .card{ 
     height: 210px;
-    align-items: center;
     position: relative;
-    margin-left: 100px;
-    margin-right: 100px;
     top: 200px;
+    
   }
 
-  @media(max-width: 500px){
-    .card{
-      width: 100%;
-      max-width: 200px;
-      justify-content: space-between;
-      height: auto;
-      text-align: justify;
-    }
+  .section-skills{
+        margin-bottom: 400px;
   }
+
+@media(max-width: 900px){
+     .card{
+       margin-top: 20px;
+     }
+     .box-2{
+      margin-top: -60px;
+     }
+}
   
   

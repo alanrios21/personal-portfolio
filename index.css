@@ -30,7 +30,8 @@
   top: 240px;
   height: 500px;
   border-radius: 12px;
-  background: #222; 
+  background: #222;
+  margin-bottom: 460px;
 }
 
 .mi-cv{
@@ -46,7 +47,7 @@
   position: relative;
   top: 30px;
   outline: transparent;
-  left: 170px;
+  left: 150px;
   border-radius: 5px;
 }
 
@@ -293,58 +294,36 @@ a:link, a:visited, a:active {
     position: relative;
   }
   .alan{
-    top: 0px;
-    
+    top: 0px;  
   }
 }
 
-@media(min-height: 1024px){
-  .my-section{
-    top: 260px;
+ .box{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
   }
- }
 
-@media(min-height: 1366px){
-  .my-section{
-    top: 430px;
+  @media(max-width: 640px){
+    .my-section{
+      width: 100%;
+      max-width: 400px;
+    }
+    .mi-cv{
+      top: -20px;
+      left: 60px;
+    }
   }
-}
+  
+  @media(max-width: 450px){
+    .my-section{
+      max-width: 300px;
+      height: 550px;
+    }
+    .mi-cv{
+      left: 10px;
+    }
+  }
 
-@media(max-height: 823px){
-  .my-section{
-    margin-bottom: 280px;
-  }
-}
-
-@media(max-height: 720px){
-  .my-section{
-    top: 135px
-  }
-}
-
-@media(max-height: 731px){
-  .my-section{
-    margin-bottom: 280px;
-  }
-}
-
-@media (max-width: 620px){
-  .my-section{
-    max-width: 400px;
-  }
-  .mi-cv{
-    top: 0px;
-    left: 80px;
-  }
-}
-
-@media (max-width: 420px){
-  .my-section{
-    max-width: 300px;
-    height: 600px;
-    top: 140px;  
-  }
-  .mi-cv{
-    left: 25px;  
-  } 
-}
+ 

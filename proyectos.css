@@ -1,37 +1,28 @@
 .titulo-proyecto{
   position: relative;
-  top: 150px;  
+  top: -100px;
+  margin-top: 300px;  
+}
+
+.box{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  
+}
+
+.img-roseweather{
+  height: 230px;
 }
 
 .section-projects{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 400px;
-    margin-top: 50px;
+  margin-bottom: 200px;
 }
 
-.card{
-  position: relative;
-  top: 200px;
-}
-  
-.img-roseweather{
-  height: 250px;
-}
-
-@media(max-width: 576px){
-  .section-projects{
-    position: relative;
-    left: 180px;
-    width: 100%;  
-  }
-  .titulo-proyecto{
-    right: 100px;
-  }
+@media(max-width: 1200px){
   .card{
-    width: 100%;
-    max-width: 350px;
-    margin-right: 200px;    
-  }
+    margin-top: 20px;
+  } 
 }
