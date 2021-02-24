@@ -24,12 +24,11 @@
   .card{ 
     height: 210px;
     position: relative;
-    top: 200px;
-    
+    top: 200px;  
   }
 
   .section-skills{
-        margin-bottom: 400px;
+        margin-bottom: 350px;
   }
 
 @media(max-width: 900px){
@@ -39,6 +38,4 @@
      .box-2{
       margin-top: -60px;
      }
-}
-  
-  
+}  

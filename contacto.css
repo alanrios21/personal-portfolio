@@ -37,6 +37,8 @@ form{
   .container-contacto{
     width: 100%;
     max-width: 400px;
+    margin-bottom: 200px;
+    top: 80px;
   }
 }
 

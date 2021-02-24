@@ -309,6 +309,8 @@ a:link, a:visited, a:active {
     .my-section{
       width: 100%;
       max-width: 400px;
+      margin-bottom: 300px;
+      top: 150px;
     }
     .mi-cv{
       top: -20px;
@@ -325,5 +327,3 @@ a:link, a:visited, a:active {
       left: 10px;
     }
   }
-
- 

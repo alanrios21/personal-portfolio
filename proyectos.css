@@ -9,8 +9,7 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 60px;
-  
+  margin-bottom: 60px; 
 }
 
 .img-roseweather{
@@ -18,11 +17,16 @@
 }
 
 .section-projects{
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 @media(max-width: 1200px){
   .card{
     margin-top: 20px;
   } 
+  
+  .titulo-proyecto{
+    margin-top: 250px;
+    margin-bottom: -50px;
+  }
 }
