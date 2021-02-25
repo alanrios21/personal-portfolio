@@ -1,3 +1,4 @@
+AOS.init();
 const menuBtn = document.querySelector(".menu-toggle");
 const topNav = document.querySelector(".site-nav");
 menuBtn.addEventListener("click", function () {
