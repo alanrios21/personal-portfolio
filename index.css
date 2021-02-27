@@ -19,18 +19,6 @@
   top: 20px;
 }
 
-.opacity-cero{
-  opacity: 0;
-  visibility: visible;
-  transition: visiblity 0s linear 0.33s, opacity 0.33s linear;
-}
-
-.opacity-uno{
-  opacity: 1;
-  visibility: hidden;
-  transition: visiblity 1s linear 0.33s, opacity 0.33s linear;
-}
-
 .alan{
   position: relative;
   top: 10px;
