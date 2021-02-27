@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+
 #alan{
      background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(26, 25, 25, 0.5)), url("/imagenes/web-developer-picture.jpg");
      background-repeat: no-repeat;
@@ -16,6 +17,18 @@
 .iconos{
   position: relative;
   top: 20px;
+}
+
+.opacity-cero{
+  opacity: 0;
+  visibility: visible;
+  transition: visiblity 0s linear 0.33s, opacity 0.33s linear;
+}
+
+.opacity-uno{
+  opacity: 1;
+  visibility: hidden;
+  transition: visiblity 1s linear 0.33s, opacity 0.33s linear;
 }
 
 .alan{
@@ -71,7 +84,7 @@ a .mi-cv{
 }
 
 p{
-  text-align: justify;
+  text-align: center;
 }
 
 footer{
@@ -112,6 +125,7 @@ header::after {
   text-decoration: none;
   left: 20px;
   border: none;
+  display: block;
 }
 
 a:link, a:visited, a:active {
