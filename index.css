@@ -2,7 +2,7 @@
 
 
 #alan{
-     background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(26, 25, 25, 0.5)), url("/imagenes/web-developer-picture.jpg");
+     background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(26, 25, 25, 0.5)), url("imagenes/web-developer-picture.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center center;
@@ -13,6 +13,16 @@
  html{
     scroll-behavior: smooth;
 } 
+
+.sweetAlert{
+  width: 450px;
+  height: 230px;
+  padding-bottom: 40px;
+}
+
+.display{
+  background-color: tomato;
+}
 
 .iconos{
   position: relative;
