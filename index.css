@@ -143,7 +143,7 @@ a:link, a:visited, a:active {
 
 .site-nav-open {
   clip-path: circle(150% at top right);
-  top: 98%;
+  top: 100%;
   width: 100%;
   background: #A41D2F;
   height: 2000px;
@@ -154,9 +154,9 @@ a:link, a:visited, a:active {
   padding: 0;
   list-style: none;
   position: relative;
-  top: -30px;
+  top: 50px;
   text-align: center;
-  font-size: 23px;  
+  font-size: 23px; 
 }
 
 .hover-menu:hover{
@@ -166,7 +166,7 @@ a:link, a:visited, a:active {
 .site-nav a {
   color: white;
   display: block;
-  padding: 2em 4em;
+  padding: 1em 4em;
   text-decoration: none; 
 }
 
