@@ -241,8 +241,6 @@ a:link, a:visited, a:active {
   cursor: pointer;
 }
 
-
-
 @media (min-width: 947px){
   .menu-toggle {
     display: none;
