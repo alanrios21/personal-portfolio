@@ -231,6 +231,18 @@ a:link, a:visited, a:active {
   border-radius: 6px;
 }
 
+.card{
+  overflow: hidden;
+}
+
+ .card:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+  transform: translateY(-10%);
+  cursor: pointer;
+}
+
+
+
 @media (min-width: 947px){
   .menu-toggle {
     display: none;
